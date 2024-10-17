@@ -55,11 +55,16 @@
 // }
 
 // switch case
-const fruit = 'Laranja'
-switch(fruit) {
-    case 'Laranja': return console.log('Você é de boas')
-    case 'Morango': return console.log('Você é romantico')
-    default: return console.log('Não temos o significado dessa fruta')
-}
+// const fruit = 'Laranja'
+// switch(fruit) {
+//     case 'Laranja': return console.log('Você é de boas')
+//     case 'Morango': return console.log('Você é romantico')
+//     default: return console.log('Não temos o significado dessa fruta')
+// }
 
 // Criar exercicio nota com switch case
+
+const nota = 10
+switch (nota) {
+    case 10: return console.log ('Aprovado, nota maxima!')
+}
