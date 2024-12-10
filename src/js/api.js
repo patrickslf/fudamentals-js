@@ -34,29 +34,29 @@
 
  //################################### *API POKEMON* ##########################################
 
-  function pokemonAPI (pokemon){
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
-    .then (res => res.json())
-    .then (data => {
-        const div = document.getElementById('pokemon-info')
-        const {name, sprites, weight} = data;
+  // function pokemonAPI (pokemon){
+  //   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+  //   .then (res => res.json())
+  //   .then (data => {
+  //       const div = document.getElementById('pokemon-info')
+  //       const {name, sprites, weight} = data;
 
-        div.innerHTML = `
-        <h2>${name}</h2>
-        <img src="${sprites.front_default}" alt="">
-        <p>${weight}</p>
-        `
-        // const nome = `Nome: ${name}`;
-        // const peso = `Peso: ${weight}`;
-        // const linkFoto = `link da foto: ${sprites.front_default}`;
-        // console.log(nome);
-        // console.log(peso);
-        // console.log(linkFoto);
-    })
-    .catch(error => console.error('Error:', error))
-  }
+  //       div.innerHTML = `
+  //       <h2>${name}</h2>
+  //       <img src="${sprites.front_default}" alt="">
+  //       <p>${weight}</p>
+  //       `
+  //       // const nome = `Nome: ${name}`;
+  //       // const peso = `Peso: ${weight}`;
+  //       // const linkFoto = `link da foto: ${sprites.front_default}`;
+  //       // console.log(nome);
+  //       // console.log(peso);
+  //       // console.log(linkFoto);
+  //   })
+  //   .catch(error => console.error('Error:', error))
+  // }
   
-  pokemonAPI('vulpix')
+  // pokemonAPI('vulpix')
   
 
    //################################ *API FAKE STORE* #############################################
